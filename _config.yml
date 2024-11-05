@@ -1,3 +1,15 @@
-title: Kaylah Tan's Github Page
-description: Let me show you how much Whitman College actually taught me ;)
-remote_theme: CONTRAST
+baseurl: /jekyll_tutorial
+url: https://<kaylah-tan>.github.io/
+
+title: Kaylah's Portfolio 
+email: tank@whitman.edu
+description: >-
+            Very good my site is~
+baseurl: /jekyll_tutorial
+url: https://<kaylah-tan>.github.io/
+linked_in_username = kaylah-tan
+github_username: kaylah-tan
+
+theme: minima
+plugins:
+  - jekyll-feed
