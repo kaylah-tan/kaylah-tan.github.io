@@ -1,15 +1,28 @@
-baseurl: /jekyll_tutorial
-url: https://<kaylah-tan>.github.io/
+**Kaylah Tan**
+tank@whitman.edu
+https://www.linkedin.com/in/kaylah-tan/
 
-title: Kaylah's Portfolio 
-email: tank@whitman.edu
-description: >-
-            Very good my site is~
-baseurl: /jekyll_tutorial
-url: https://<kaylah-tan>.github.io/
-linked_in_username = kaylah-tan
-github_username: kaylah-tan
+## ABOUT ME
+Inquisitive, energetic and enthusiastic Computer Science student at Whitman College. I have a strong foundation in math, programming logic and cross-platform coding. Seeking to leverage solid development skills with a focus on collaboration, effective communication, dedication and creativity as a programmer.
 
-theme: minima
-plugins:
-  - jekyll-feed
+-------------------     ----------------------------
+## EDUCATION
+- #### Bachelor of Science - Computer Science Major 
+Whitman College | Expected: May 2025
+
+
+
+-------------------     ----------------------------
+## TECHNICAL SKILLS
+
+| **Programming Language** | **Tools and Technologies** |
+|  :---:    | :---: |
+| Python  | Anaconda  |
+| Java  | IntelliJ IDEA  |
+| C  | VIM  |
+| C++  | CLion  |
+| SQL  | MySQL  |
+
+
+### Resume
+
