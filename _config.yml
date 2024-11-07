@@ -1,78 +1,58 @@
-baseURL: https://kaylah-tan.github.io
+# Base configuration
+markdown: jekyll
+highlighter: rouge
+permalink: pretty
 
-languageCode: en-us
-title: "Kaylah's Website"
-theme: "toha"
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
-# Manage languages
-# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
-languages:
-  en:
-    languageName: English
-    weight: 1
-    #  bn:
-    #    languageName: বাংলা
-    #    weight: 3
+# Title
+name: Kaylah's Website
+# Author/Organization info to be displayed in the templates
+author:
+  name: Kaylah Tan
+  url: http://linkedin.com/kaylah-tan
 
-# Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
-# DefaultContentLanguage: bn
+# When using this template with a project (repository) page set the baseurl to '/project-name'
+# For user/organization pages set this to an empty string
+# When working locally use jekyll serve --baseurl '' so that you can view everything at localhost:4000
+# See http://jekyllrb.com/docs/github-pages/ for more info
+baseurl: http"://kaylah-tan.github.io
 
-# Allow raw html in markdown file
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  tableOfContents:
-    startLevel: 2
-    endLevel: 6
-    ordered: false
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+#logourl: /assets/img/dc_logo.png
+#logoalt: The D.C. flag
 
-# At least HTML and JSON are required for the main HTML content and
-# client-side JavaScript search
-outputs:
-  home:
-  - HTML
-  - RSS
-  - JSON
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Home Page
+  internal: true
+  url: ./
+- text: Add a new page
+  internal: true
+  url: add-a-new-page
+- text: About Me
+  internal: true
+  url: configure-the-guide
+- text: My Projects
+  internal: true
+  url: github
+- text: Contact
+  glossary: true
+- text: Edit this Repo
+  internal: false
+  url: https://github.com/kaylah-tan
+# Repo list
+# List repos that you would like to appear on the homepage here
+repos:
+- name: Walla Wineries 
+  description: 
+  url:https://github.com/kaylah-tan/walla-walla-valley-wineries
 
-# Enable Google Analytics
-googleAnalytics: UA-122321624-2
+google_analytics_ua: 
 
-# Enable global emoji support
-enableEmoji: true
-
-# Site parameters
-params:
-  # Background image of the landing page
-  background: /images/site/background.jpg
-
-  # Provide logos for your site. The inverted logo will be used in the initial
-  # transparent navbar and the main logo will be used in the non-transparent navbar.
-  # It will default to the theme logos if not provided.
-  #logo:
-    #main: /images/site/main-logo.png
-    #inverted: /images/site/inverted-logo.png
-    #favicon: /images/site/favicon.png
-
-  # GitHub repo of your site
-  gitRepo: https://github.com/kaylah-tan/Personal-Website
-  # Default branch of your Git repo
-  gitBranch: main
-
-  # specify whether you want to write some blog posts or not
-  enableBlogPost: true
-
-  # specify whether you want to show Table of Contents in reading page
-  enableTOC: true
-
-  # Provide newsletter configuration. This feature hasn't been implemented yet.
-  # Currently, you can just hide it from the footer.
-  newsletter:
-    enable: true
-
-  # Configure Notes property
-  notes:
-    # Set a background color of note card header. Use any CSS color code/name.
-    headerBackground: aliceblue
-    # Set note card title color.
-    headerTextColor: #1c2d41
+# Style Variables
+brand_color: "#DA253B"
