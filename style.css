@@ -1,32 +1,36 @@
 /* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #000000;
+    color: #4d2c3d; /* Darker text color for readability */
     line-height: 1.6;
-    max-width: 800px;
-    margin: auto;
+    background-color: #f4e1d2; /* Light beige background */
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-/* Styling for the hero section with your name */
+/* Hero Section with Centered Name */
 .hero {
     text-align: center;
-    height: 250px;
-    background-color: #7a2a5e; /* Darker background color for contrast */
-    border-bottom: 2px solid #333;
+    padding: 50px 0;
+    background-color: #a66194; /* Purple header background */
+    color: #fff; /* White text for contrast */
 }
 
 .hero h1 {
-    font-size: 3em;
-    color: #ffffff; /* White text for better contrast with the background */
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
 }
 
-/* Styling for the navbar with rectangular tabs */
+/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #333; /* Darker background for navbar */
-    padding: 10px;
+    gap: 30px;
+    background-color: #a66194; /* Matches hero background */
+    padding: 10px 0;
+    font-weight: bold;
 }
 
 .navbar ul {
@@ -34,7 +38,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
 
 .navbar li {
@@ -43,26 +47,61 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: #ffffff; /* White text color for contrast */
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #555; /* Dark gray background for each tab */
-    transition: background-color 0.3s, color 0.3s;
+    color: #f4e1d2; /* Light beige text color to match background */
+    transition: color 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #7a2a5e; /* Matches the hero section color on hover */
-    color: #ffffff; /* Keeps text white on hover */
+    color: #ffad60; /* Accent color on hover */
 }
 
-/* Additional styling for other sections */
+/* Content Container */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
 }
 
+/* About Me Section */
 .about-me {
-    font-family: Arial, sans-serif;
-    color: #333;
+    flex: 1;
+    padding: 20px;
+    background-color: #f4e1d2; /* Matches body background */
+    border-radius: 8px;
+    color: #4d2c3d; /* Darker text color */
+}
+
+.about-me h2 {
+    color: #a66194; /* Purple heading color */
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Project Ideas Section */
+.alt-color-section {
+    background-color: #f9d8b5; /* Lighter beige background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.alt-color-section h2 {
+    color: #a66194; /* Purple heading color */
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 20px 0;
+    color: #4d2c3d;
 }
