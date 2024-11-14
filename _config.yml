@@ -26,9 +26,6 @@ outputs:
     - RSS
     - JSON
 
-# Google Analytics
-googleAnalytics: "UA-122321624-2"  # Replace with your actual Google Analytics ID if you have one
-
 # Enable global emoji support
 enableEmoji: true
 
