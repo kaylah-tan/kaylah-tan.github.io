@@ -1,9 +1,9 @@
 /* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #4d2c3d; /* Darker text color for readability */
+    color: #4d2c3d;
     line-height: 1.6;
-    background-color: #f4e1d2; /* Light beige background */
+    background-color: #f4e1d2;
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -13,8 +13,8 @@ body {
 .hero {
     text-align: center;
     padding: 50px 0;
-    background-color: #a66194; /* Purple header background */
-    color: #fff; /* White text for contrast */
+    background-color: #7a2a5e;
+    color: #fff;
 }
 
 .hero h1 {
@@ -23,12 +23,41 @@ body {
     margin: 0;
 }
 
+/* About Me Section */
+.about-me {
+    padding: 20px;
+    background-color: #f4e1d2;
+    color: #4d2c3d;
+    margin-top: 20px; /* Adds spacing below the header */
+    border-radius: 8px;
+}
+
+.about-me h2 {
+    color: #7a2a5e;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Data Sources Section */
+.alt-color-section {
+    background-color: #f9d8b5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.alt-color-section h2 {
+    color: #7a2a5e;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
 /* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: center;
     gap: 30px;
-    background-color: #a66194; /* Matches hero background */
+    background-color: #7a2a5e;
     padding: 10px 0;
     font-weight: bold;
 }
@@ -47,55 +76,12 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: #f4e1d2; /* Light beige text color to match background */
+    color: #f4e1d2;
     transition: color 0.3s;
 }
 
 .navbar a:hover {
-    color: #ffad60; /* Accent color on hover */
-}
-
-/* Content Container */
-.container {
-    display: flex;
-    gap: 20px;
-    padding-top: 30px;
-}
-
-/* About Me Section */
-.about-me {
-    flex: 1;
-    padding: 20px;
-    background-color: #f4e1d2; /* Matches body background */
-    border-radius: 8px;
-    color: #4d2c3d; /* Darker text color */
-}
-
-.about-me h2 {
-    color: #a66194; /* Purple heading color */
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-/* Project Ideas Section */
-.alt-color-section {
-    background-color: #f9d8b5; /* Lighter beige background */
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-.alt-color-section h2 {
-    color: #a66194; /* Purple heading color */
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-/* Image Styling */
-.image-container img {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 20px;
+    color: #ffad60;
 }
 
 /* Footer */
