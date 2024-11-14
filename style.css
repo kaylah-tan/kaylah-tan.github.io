@@ -12,20 +12,20 @@ body {
 .hero {
     text-align: center;
     height: 250px;
-    background-color: #7a2a5e;
+    background-color: #7a2a5e; /* Darker background color for contrast */
     border-bottom: 2px solid #333;
 }
 
 .hero h1 {
     font-size: 3em;
-    color: #000000;
+    color: #ffffff; /* White text for better contrast with the background */
 }
 
 /* Styling for the navbar with rectangular tabs */
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #333; /* Darker background for navbar */
     padding: 10px;
 }
 
@@ -43,15 +43,16 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #ffffff; /* White text color for contrast */
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #ffffff;
-    transition: background-color 0.3s;
+    background-color: #555; /* Dark gray background for each tab */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #777;
+    background-color: #7a2a5e; /* Matches the hero section color on hover */
+    color: #ffffff; /* Keeps text white on hover */
 }
 
 /* Additional styling for other sections */
