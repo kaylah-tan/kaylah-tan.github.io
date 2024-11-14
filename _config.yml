@@ -1,7 +1,7 @@
 baseURL: "https://kaylah-tan.github.io"
 languageCode: "en-us"
 title: "Kaylah's Portfolio"
-theme: "toha"  # Replace with another theme name if needed
+theme: "minima"  # Replace with another theme name if needed
 
 # Language settings
 languages:
