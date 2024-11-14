@@ -10,11 +10,9 @@ body {
 
 /* Styling for the hero section with your name */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     height: 200px;
-    background-color: #f5f5f5; /* Light background color */
+    background-color: #f5f5f5;
     border-bottom: 2px solid #333;
 }
 
@@ -27,9 +25,20 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 15px;
     background-color: #333;
     padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li {
+    list-style: none;
 }
 
 .navbar a {
@@ -46,10 +55,13 @@ body {
 }
 
 /* Additional styling for other sections */
-#about {
-    padding: 20px;
+.container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
+}
+
+.about-me {
     font-family: Arial, sans-serif;
     color: #333;
 }
