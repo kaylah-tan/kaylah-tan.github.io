@@ -8,83 +8,48 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3 {
-    text-align: center;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.header h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.header p {
-    font-size: 1.2em;
-    color: #666;
-}
-
-/* Navigation */
-.nav-links {
+/* Styling for the hero section with your name */
+.hero {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
+    align-items: center;
+    height: 200px;
+    background-color: #f5f5f5; /* Light background color */
+    border-bottom: 2px solid #333;
 }
 
-.nav-links a {
-    color: #007bff;
-    font-weight: bold;
-}
-
-/* Projects Section */
-.projects {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.project {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    transition: box-shadow 0.3s;
-}
-
-.project:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project-title {
-    font-size: 1.2em;
+.hero h1 {
+    font-size: 3em;
     color: #333;
 }
 
-.project-description {
-    color: #555;
-    margin-top: 10px;
+/* Styling for the navbar with rectangular tabs */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #333;
+    padding: 10px;
 }
 
-/* Contact Section */
-.contact {
-    text-align: center;
-    margin-top: 40px;
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #555;
+    transition: background-color 0.3s;
 }
 
-footer {
-    text-align: center;
-    margin-top: 30px;
-    color: #999;
+.navbar a:hover {
+    background-color: #777;
+}
+
+/* Additional styling for other sections */
+#about {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
