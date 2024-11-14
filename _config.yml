@@ -1,48 +1,6 @@
+title: "Kaylah Tan"
+description: "Nice to meet you! "
+theme: jekyll-theme-minimal
+
 baseURL: "https://kaylah-tan.github.io"
 languageCode: "en-us"
-title: "Kaylah's Portfolio"
-theme: jekyll-theme-minimal
-# Language settings
-languages:
-  en:
-    languageName: English
-    weight: 1
-
-# Allow raw HTML in markdown files
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  tableOfContents:
-    startLevel: 2
-    endLevel: 6
-    ordered: false
-
-# Output formats
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-
-# Enable global emoji support
-enableEmoji: true
-
-# Site parameters
-params:
-  # GitHub repository for the site
-  gitRepo: "https://github.com/kaylah-tan/Personal-Website"
-  gitBranch: "main"
-
-  # Enable blog posts and table of contents
-  enableBlogPost: true
-  enableTOC: true
-
-  # Newsletter configuration (set to true if you plan to add one)
-  newsletter:
-    enable: false
-
-  # Configure Notes property
-  notes:
-    headerBackground: "#f4f4f9"
-    headerTextColor: "#333"
