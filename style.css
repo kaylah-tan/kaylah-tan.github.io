@@ -40,7 +40,7 @@ body {
 
 /* Data Sources Section */
 .alt-color-section {
-    background-color: #f9d8b5;
+    background-color: #cae0c1;
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
@@ -76,7 +76,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: #f4e1d2;
+    color: #cae0c1;
     transition: color 0.3s;
 }
 
