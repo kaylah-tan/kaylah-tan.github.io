@@ -2,30 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Kaylah</title>
+    <link rel="icon" type="image/png" href="kaylah_avatar.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="home_page">
-        <h2>Kaylah Tan</h2>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about_me.html">About Me</a></li>
-                <li class="dropdown">
-                    <a href="projects.html">Projects</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="web_projects.html">Web Development</a></li>
-                        <li><a href="ux_projects.html">UX Design</a></li>
-                        <li><a href="ml_projects.html">Machine Learning</a></li>
-                    </ul>
-                </li>
-                <li><a href="design_manifesto.html">Design Manifesto</a></li>
-                <li><a href="contact_me.html">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="title-section">
+                <img src="kaylah_avatar.png" alt="Avatar" class="avatar">
+                <h2>Kaylah Tan</h2>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="projects.html">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="web_projects.html">Web Development</a></li>
+                            <li><a href="ux_projects.html">UX Design</a></li>
+                            <li><a href="ml_projects.html">Machine Learning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact_me.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
         <!-- About me! -->
         <main></main>
         <section class="about-me">
@@ -56,34 +63,30 @@
                 <li>
                     <strong><a href="https://www.cdc.gov/nchs/data-visualization/mortality-trends/index.htm"> Child mortality-trends in the United States.</a></strong>
                     <p><em>Description:</em> This dataset contains information about child mortality trends from 1900-2018. This dataset can be furthered analyzed than the additional analysis from the Center for Disease Control (CDC). For example, questions about race and ethnicity, ages of pregnant women, highest deaths in a year, etc.</p>
-                    <p><em>Project Idea:</em>: The aim for this project is to understand child mortality trends in the United States. This is a national public health issue that is not portrayed or discussed on the media very often. </em></p>
+                    <p><em>Project Idea:</em>: The aim for this project is to understand child mortality trends in the United States. This is a national public health issue that is not portrayed or discussed on the media very often.</p>
                 </li>
                 <li>
                     <strong><a href="https://www.kaggle.com/datasets/kaushiksuresh147/adidas-vs-nike">Adidas v. Nike Comparison</a></strong>
                     <p><em>Description:</em> This dataset contains information about Adidas and Nike clothing information. This dataset is synethic, obtained from Kaggle. </p>
-                    <p><em>Project Idea: The aim for this project is to have fun comparing different information for two highly comptetitive sport brands. Some possible data analysis can look at differences in pricing, differences in shoe color, copies of one another, etc.</em></p>
+                    <p><em>Project Idea:</em> The aim for this project is to have fun comparing different information for two highly comptetitive sport brands. Some possible data analysis can look at differences in pricing, differences in shoe color, copies of one another, etc.</p>
                 </li>
             </ol>
         </section>
 
-        <!-- Where's Scheuller upload for HW07 -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Where's Schueller?</title>
-  <h3>Where's Schueller?</h3>
-  <iframe 
-    src="geolocation_plot.html" 
-    width="100%" 
-    height="600" 
-    style="border:none;">
-  </iframe>
-
-</body>
-    </main>
+        <!-- Where's Schueller Section -->
+    <section>
+        <h3>Where's Schueller?</h3>
+        <iframe
+            src="geolocation_plot.html" 
+            width="100%" 
+            height="600" 
+            style="border:none;">
+        </iframe>
+    </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>Built with ❤️ and <a href="https://pages.github.com/">GitHub Pages</a>.</p>
     </footer>
-
 </body>
 </html>

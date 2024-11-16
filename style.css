@@ -12,71 +12,40 @@ body {
     padding: 30px;
 }
 
-h1 {
-    background-color: #006d77; /* Teal color for the header box */
-    color: #ffffff; /* White text */
-    padding: 20px; /* Space inside the box */
-    text-align: center; /* Center-align content */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+/* Header Section */
+.main-header {
+    background-color: #006d77; /* Teal background */
+    padding: 20px 40px;
+}
+
+.header-content {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space out avatar/title and menu */
+    max-width: 1200px;
+    margin: 0 auto; /* Center content within the header */
+}
+
+/* Title Section (Avatar + Name) */
+.title-section {
+    display: flex; /* Align avatar and name horizontally */
+    align-items: center; /* Vertically center avatar and name */
+    gap: 15px; /* Space between avatar and name */
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Make avatar circular */
+    object-fit: cover; /* Ensure the image scales correctly */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.title-section h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem; /* Adjust name size */
-    margin: 0 0 20px 0; /* Add spacing below */
-}
-
-h2 {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-bottom: 10px; /* Space between name and menu */
-}
-
-.nav-menu {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    display: flex; /* Horizontal layout for menu */
-    justify-content: center; /* Center-align menu items */
-    gap: 20px; /* Add spacing between links */
-}
-
-.nav-menu a {
-    text-decoration: none; /* Remove underline */
-    color: #1d1c1c; /* Dark text color */
-    padding: 10px 15px; /* Add padding around links */
-    transition: color 0.3s, background-color 0.3s ease;
-}
-
-.nav-menu a:hover {
-    color: #a72833; /* Accent color for hover */
-}
-
-/* About Me */
-.about-me {
-    padding: 20px;
-    color: #434857;
-    margin-top: 20px; 
-    border-radius: 8px;
-}
-
-.about-me h2 {
-    color: #4e4e4e;
-    font-size: 1.8em;
-    font-weight: bold;
-    text-align: left;
-}
-
-/* Data Sources Section */
-.alt-color-section {
-    background-color: #a8dadc; /* Light blue background */
-    padding: 40px;
-    border-radius: 8px;
-    margin-top: 20px;
-    text-align: left;
-}
-
-.alt-color-section h2 {
-    color: #1d1c1c;
-    font-size: 1.8em;
-    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 0;
+    color: #ffffff; /* White text for name */
 }
 
 /* Navigation Bar */
@@ -87,74 +56,251 @@ h2 {
     background-color: #006d77;
     padding: 10px 0;
     font-weight: bold;
+    position: relative;
 }
 
 .navbar ul {
     list-style: none;
-    padding: 0;
     margin: 0;
-    display: flex;
+    padding: 0;
+    display: flex; /* Top-level items aligned horizontally */
     gap: 30px;
 }
 
 .navbar li {
-    position: relative;
+    position: relative; /* Ensure dropdown is positioned relative to parent */
 }
 
 .navbar a {
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
     color: #ffffff;
     padding: 10px 15px;
     display: block;
+    font-size: 1rem;
+    font-weight: bold;
     transition: color 0.3s, background-color 0.3s;
 }
 
 .navbar a:hover {
-    color: #a72833;
+    color: #3ca0e7; /* Highlight color for hover */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #006d77;
+    line-height: 1.6;
+    background-color: #f1faee;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Header Section */
+.main-header {
+    background-color: #006d77; /* Teal background */
+    padding: 20px 40px;
+}
+
+.header-content {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space out avatar/title and menu */
+    max-width: 1200px;
+    margin: 0 auto; /* Center content within the header */
+}
+
+/* Title Section (Avatar + Name) */
+.title-section {
+    display: flex; /* Align avatar and name horizontally */
+    align-items: center; /* Vertically center avatar and name */
+    gap: 15px; /* Space between avatar and name */
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Make avatar circular */
+    object-fit: cover; /* Ensure the image scales correctly */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.title-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin: 0;
+    color: #ffffff; /* White text for name */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     background-color: #006d77;
-}
-
-/* Dropdown Menu Styles */
-.dropdown-menu {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    list-style: none;
     padding: 10px 0;
-    gap: 15px;
-    min-width: 200px;
-    transform: translateY(-10px);
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Top-level items aligned horizontally */
+    gap: 30px;
+}
+
+.navbar li {
+    position: relative; /* Ensure dropdown is positioned relative to parent */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+    color: #3ca0e7; /* Highlight color for hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Transparent */
+    position: absolute; /* Position relative to the parent */
+    top: 100%; /* Align below the parent */
+    left: 0; /* Align to the left of the parent */
+    background-color: #ffffff; /* White background */
+    color: #006d77; /* Text color */
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    list-style: none; /* Remove bullet points */
+    padding: 10px 0; /* Add padding for spacing */
+    margin: 0;
+    z-index: 1000; /* Ensure it appears above other elements */
+    width: 200px; /* Set a fixed width for dropdown */
+    transform: translateY(-10px); /* Slight upward offset */
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    display: flex; /* Ensures the dropdown items are displayed correctly */
+    flex-direction: column; /* Stack items vertically */
 }
 
+/* Show Dropdown on Hover */
 .dropdown:hover .dropdown-menu {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
+    visibility: visible; /* Make visible */
+    opacity: 1; /* Fully opaque */
+    transform: translateY(0); /* Remove upward offset */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .nav-menu {
-        flex-direction: column; /* Stack menu items on mobile */
-        gap: 10px;
-    }
-
-    .alt-color-section {
-        padding: 20px;
-    }
+/* Dropdown Menu Items */
+.dropdown-menu li {
+    padding: 10px 15px; /* Add padding for spacing */
+    text-align: left; /* Align text to the left */
+    white-space: nowrap; /* Prevent wrapping */
 }
 
+.dropdown-menu li a {
+    text-decoration: none; /* Remove underline */
+    color: #006d77; /* Teal text */
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    color: #3ca0e7; /* Highlight on hover */
+    padding-left: 10px; /* Indent text */
+}
+
+/* Data Sources Section */
+.alt-color-section {
+    background-color: #a8dadc; /* Light blue background */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px;
+    text-align: left;
+}
+
+.alt-color-section h2 {
+    color: #000000; /* Black heading text */
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold;
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.alt-color-section ul {
+    padding-left: 20px; /* Add indentation for the list */
+}
+
+.alt-color-section li {
+    margin-bottom: 15px; /* Add spacing between list items */
+    font-size: 1rem; /* Standard text size */
+    line-height: 1.8; /* Increase line height for better readability */
+}
+
+.alt-color-section a {
+    color: #006d77; /* Teal link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.alt-color-section a:hover {
+    color: #3ca0e7; /* Highlight color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.alt-color-section p {
+    margin: 10px 0 0 0; /* Add spacing above the paragraph */
+    font-style: italic; /* Italicize descriptions */
+    color: #1d1c1c; /* Slightly darker text for descriptions */
+}
+
+
+
+/* Footer */
 .footer {
     text-align: center;
+    font-size: 14px;
+    color: #1d1c1c;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #1d1c1c;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: #1d1c1c;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #1d1c1c;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
