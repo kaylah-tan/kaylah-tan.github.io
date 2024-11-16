@@ -7,43 +7,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Header and Navigation -->
-    <header class="hero">
-        <h1>Kaylah Tan</h1>
+    <header class="home_page">
+        <h2>Kaylah Tan</h2>
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li class="dropdown">
+                    <a href="projects.html">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="web_projects.html">Web Development</a></li>
+                        <li><a href="ux_projects.html">UX Design</a></li>
+                        <li><a href="ml_projects.html">Machine Learning</a></li>
+                    </ul>
+                </li>
                 <li><a href="design_manifesto.html">Design Manifesto</a></li>
                 <li><a href="contact_me.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="container">
         <!-- About me! -->
-        <div class="about-me">
+        <main></main>
+        <section class="about-me">
             <h2>About Me</h2>
-            <p>Hello, and welcome to my website! I'm Kaylah Tan, a senior studying Computer Science at Whitman College. Originally from Tacoma, Washington, I’m passionate about exploring the intersections of data science, software engineering, and human-computer interaction to create meaningful, user-centered solutions.</p>
-            <p>I love connecting with people, and my go-to conversation starter is, "What’s been the highlight of your day so far?" I believe the most impactful solutions often start with a simple question or search and evolve into something adaptable and scalable. My aim is to bridge technical skills with empathy to address real-world challenges in a way that’s both innovative and accessible.</p>
-        </div>
+            <p>Hello, and welcome to my website! I'm Kaylah Tan, a senior studying Computer Science at Whitman College. Originally from Tacoma, Washington, I’m passionate about exploring the intersections of data science, software development, and user research to create meaningful, user-centered solutions.</p>
+            <p>While I am not a fan of labels, I like to call myself a people person. I always like to ask, "How's your day so far?" I believe that the most impactful solutions often start with a simple question that evolves into something adaptable and scalable. 
+            My aim is to bridge technical skills with empathy to address real-world challenges in a way that’s both continous and accessible.</p>
+            </section>
 
         <!-- Recent Project Section -->
-        <div class="alt-color-section">
+        <section class="alt-color-section">
             <h2>Data Sources and Project Ideas</h2>
             <ol>
                 <li>
-                    <strong><a href="https://www.macrotrends.net/1319/dow-jones-100-year-historical-chart">Electric Vehicles in Washington State</a></strong>
-                    <p><em>Description:</em> ... </p>
-                    <p><em>Project Idea:</em> ... .</p>
+                    <strong><a href="https://catalog.data.gov/dataset/electric-vehicle-population-data">Electric Vehicles in Washington State</a></strong>
+                    <p><em>Description:</em> This dataset contains information about electric vehicle purchases in Washington State. Maintained by the Department of Licensining, this dataset stores information about the car itself (i.e., make, model, year, etc), cars battery status, vehicle registered to, etc.  </p>
+                    <p><em>Project Idea:</em> The aim for this project is to conduct analysis based on electric vehicles, specifically focusing on battery levels and other information regarding whether electric vehicles are relatively in high-demand, and the functionality of the vehicle. .</p>
+                </li>
+                <li> <strong><a href="https://internal.open.piercecountywa.gov/Demographics/Housing-Affordability-Index/q79c-akif/about_data">Housing Affordability in Pierce County, WA.</a></strong>
+                    <p><em>Description:</em> This dataset contains information about housing affordability index in Pierce County from 1998-2023. Maintained by the Runstad Center for Real Estate Studies, this dataset stores information about HAI, median price, mortgage rate, household income, etc. </p>
+                    <p><em>Project Idea:</em> The aim for this project is to understand past trends in housing prices and to create a machine learning model that predicts the likihood of a post-graduate being able to afford a home in the Pierce County area in the near future. </p>
+                </li>
+                <li>
+                    <strong><a href="https://data.census.gov/table/ACSDT1Y2023.B13014?t=Education&g=010XX00US_040XX00US53"> Women 15 to 50 Years Who Had a Birth in the Past 12 Months by Marital Status and Educational Attainment.</a></strong>
+                    <p><em>Description:</em> This dataset contains information about Women residing in Washington State who have recently had a birth in the past year. Maintained by the U.S. Census Bureau, this dataset contains information about the women's educational attainment and marietal status, with Women ranging frmo 15-50. </p>
+                    <p><em>Project Idea:</em> The aim for this project is to connect with a larger idea of single mothers. This project will require another dataset containing information about single mother's socioeconomic status in addition to the dataset above.</p>
+                </li>
+                <li>
+                    <strong><a href="https://www.cdc.gov/nchs/data-visualization/mortality-trends/index.htm"> Child mortality-trends in the United States.</a></strong>
+                    <p><em>Description:</em> This dataset contains information about child mortality trends from 1900-2018. This dataset can be furthered analyzed than the additional analysis from the Center for Disease Control (CDC). For example, questions about race and ethnicity, ages of pregnant women, highest deaths in a year, etc.</p>
+                    <p><em>Project Idea:</em>: The aim for this project is to understand child mortality trends in the United States. This is a national public health issue that is not portrayed or discussed on the media very often. </em></p>
+                </li>
+                <li>
+                    <strong><a href="https://www.kaggle.com/datasets/kaushiksuresh147/adidas-vs-nike">Adidas v. Nike Comparison</a></strong>
+                    <p><em>Description:</em> This dataset contains information about Adidas and Nike clothing information. This dataset is synethic, obtained from Kaggle. </p>
+                    <p><em>Project Idea: The aim for this project is to have fun comparing different information for two highly comptetitive sport brands. Some possible data analysis can look at differences in pricing, differences in shoe color, copies of one another, etc.</em></p>
+                </li>
             </ol>
-        </div>
-    </div>
+        </section>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Where's Schueller?</title>
+  <h3>Where's Schueller?</h3>
+  <iframe 
+    src="geolocation_plot.html" 
+    width="100%" 
+    height="600" 
+    style="border:none;">
+  </iframe>
+
+</body>
+    </main>
 
     <!-- Footer -->
     <footer>
-        © 2024 Kaylah Tan. Built with ❤️ and GitHub Pages.
+        <p>Built with ❤️ and <a href="https://pages.github.com/">GitHub Pages</a>.</p>
     </footer>
 
 </body>
