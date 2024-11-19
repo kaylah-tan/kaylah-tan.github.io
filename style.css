@@ -14,9 +14,12 @@ body {
 
 /* Header Section */
 .main-header {
-    background-color: #006d77; /* Teal background */
-    padding: 20px 40px;
+    background-color: #006d77;
+    padding: 40px 0; /* Add extra padding for spaciousness */
+    text-align: center; /* Center-align content */
+    color: #ffffff; /* White text */
 }
+
 
 .header-content {
     display: flex; /* Align items horizontally */
@@ -38,14 +41,18 @@ body {
     height: 80px;
     border-radius: 50%; /* Make avatar circular */
     object-fit: cover; /* Ensure the image scales correctly */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(113, 92, 92, 0.1); /* Subtle shadow */
+}
+
+.avatar:hover {
+    transform: scale(1.1); /* Subtle zoom on hover */
 }
 
 .title-section h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin: 0;
-    color: #ffffff; /* White text for name */
+    color: #ffffff;
 }
 
 /* Navigation Bar */
@@ -102,7 +109,8 @@ body {
 /* Header Section */
 .main-header {
     background-color: #006d77; /* Teal background */
-    padding: 20px 40px;
+    padding: 20px 0px;
+    text-align: center;
 }
 
 .header-content {
@@ -117,7 +125,14 @@ body {
 .title-section {
     display: flex; /* Align avatar and name horizontally */
     align-items: center; /* Vertically center avatar and name */
+    justify-content: center;
     gap: 15px; /* Space between avatar and name */
+}
+
+.section-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center;
+    gap: 20px;
 }
 
 .avatar {
@@ -126,11 +141,12 @@ body {
     border-radius: 50%; /* Make avatar circular */
     object-fit: cover; /* Ensure the image scales correctly */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
 }
 
 .title-section h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     margin: 0;
     color: #ffffff; /* White text for name */
 }
@@ -139,11 +155,12 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
     background-color: #006d77;
-    padding: 10px 0;
-    font-weight: bold;
-    position: relative;
+    padding: 15px 0;
+    position: sticky; /* Sticky navbar on scroll */
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -151,11 +168,12 @@ body {
     margin: 0;
     padding: 0;
     display: flex; /* Top-level items aligned horizontally */
-    gap: 30px;
+    gap: 20px;
 }
 
 .navbar li {
-    position: relative; /* Ensure dropdown is positioned relative to parent */
+    margin: 0;
+    padding: 0;
 }
 
 .navbar a {
@@ -165,62 +183,40 @@ body {
     display: block;
     font-size: 1rem;
     font-weight: bold;
-    transition: color 0.3s, background-color 0.3s;
+    text-transform: uppercase; /* Use uppercase for emphasis */
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar a:hover {
-    color: #3ca0e7; /* Highlight color for hover */
+    color: #ffffff;
+    background-color: #2a9d8f; /* Subtle background highlight */
+    border-radius: 5px;
 }
 
-/* Dropdown Menu */
-.dropdown-menu {
-    visibility: hidden; /* Initially hidden */
-    opacity: 0; /* Transparent */
-    position: absolute; /* Position relative to the parent */
-    top: 100%; /* Align below the parent */
-    left: 0; /* Align to the left of the parent */
-    background-color: #ffffff; /* White background */
-    color: #006d77; /* Text color */
-    border: 1px solid #ccc; /* Add a subtle border */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    list-style: none; /* Remove bullet points */
-    padding: 10px 0; /* Add padding for spacing */
-    margin: 0;
-    z-index: 1000; /* Ensure it appears above other elements */
-    width: 200px; /* Set a fixed width for dropdown */
-    transform: translateY(-10px); /* Slight upward offset */
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-    display: flex; /* Ensures the dropdown items are displayed correctly */
-    flex-direction: column; /* Stack items vertically */
-}
-
-/* Show Dropdown on Hover */
-.dropdown:hover .dropdown-menu {
-    visibility: visible; /* Make visible */
-    opacity: 1; /* Fully opaque */
-    transform: translateY(0); /* Remove upward offset */
-}
-
-/* Dropdown Menu Items */
-.dropdown-menu li {
-    padding: 10px 15px; /* Add padding for spacing */
+.about-me {
+    background-color: #e0eadd; /* White card background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px;
+    margin-top: 20px;
     text-align: left; /* Align text to the left */
-    white-space: nowrap; /* Prevent wrapping */
 }
 
-.dropdown-menu li a {
-    text-decoration: none; /* Remove underline */
-    color: #006d77; /* Teal text */
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    transition: color 0.3s ease, padding-left 0.3s ease;
+.about-me h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color: #283031;
+    margin-bottom: 20px;
 }
 
-.dropdown-menu li a:hover {
-    color: #3ca0e7; /* Highlight on hover */
-    padding-left: 10px; /* Indent text */
+.about-me p {
+    font-size: 1rem;
+    color: #1d1c1c;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
+
 
 /* Data Sources Section */
 .alt-color-section {
@@ -232,10 +228,12 @@ body {
 }
 
 .alt-color-section h2 {
-    color: #000000; /* Black heading text */
-    font-size: 1.5rem; /* Larger font size */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #283031; /* Subtle text color for subtitle */
+    margin-top: 5px;
     font-weight: bold;
-    text-align: center; /* Center-align the heading */
+    text-align: left; /* Center-align the heading */
     margin-bottom: 20px; /* Add spacing below the heading */
 }
 
@@ -250,13 +248,13 @@ body {
 }
 
 .alt-color-section a {
-    color: #006d77; /* Teal link color */
+    color: #22328b; /* Teal link color */
     text-decoration: none;
     font-weight: bold;
 }
 
 .alt-color-section a:hover {
-    color: #3ca0e7; /* Highlight color on hover */
+    color: #a14c1e; /* Highlight color on hover */
     text-decoration: underline; /* Add underline on hover */
 }
 
