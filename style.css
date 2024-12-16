@@ -383,6 +383,36 @@ a:hover {
     text-decoration: underline;
     color: #00a8e8;
 }
+.references-header {
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.references-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+.references-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+}
+
+.reference-link {
+    color: #0c3d5f; /* Blue link */
+    transition: color 0.3s ease-in-out;
+}
+
+.reference-link:hover {
+    color: #005fa3; /* Darker blue on hover */
+    text-decoration: underline;
+}
 
 /* Footer */
 .footer {
@@ -401,6 +431,3 @@ a:hover {
 .footer a:hover {
     text-decoration: underline;
 }
-
-
-
