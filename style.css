@@ -404,6 +404,15 @@ a:hover {
     color: #555;
 }
 
+.proj10 {
+    text-align: center;
+}
+
+.proj10:hover{
+    color: #424676; 
+    text-decoration: underline;
+}
+
 .reference-link {
     color: #0c3d5f; /* Blue link */
     transition: color 0.3s ease-in-out;
