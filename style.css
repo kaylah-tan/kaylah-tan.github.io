@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montersatt', sans-serif;
     color: #006d77;
     line-height: 1.6;
     background-color: #f1faee;
@@ -39,7 +39,6 @@ body {
 .avatar {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* Make avatar circular */
     object-fit: cover; /* Ensure the image scales correctly */
     box-shadow: 0 4px 6px rgba(113, 92, 92, 0.1); /* Subtle shadow */
 }
